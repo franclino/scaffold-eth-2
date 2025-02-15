@@ -15,10 +15,10 @@ import "hardhat/console.sol";
 contract YourContract {
     // State Variables
     address public immutable owner;
-    string public greeting = "Building Unstoppable Apps!!!";
-    bool public premium = false;
-    uint256 public totalCounter = 0;
-    mapping(address => uint) public userGreetingCounter;
+    string public greeting = "You already ahead!!!"; // default value
+    bool public premium = false; // default value
+    uint256 public totalCounter = 0; // default value
+    mapping(address => uint) public userGreetingCounter; // default value
 
     // Events: a way to emit log statements from smart contract that can be listened to by external parties
     event GreetingChange(address indexed greetingSetter, string newGreeting, bool premium, uint256 value);
